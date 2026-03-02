@@ -10,12 +10,11 @@
     <classes>
       <class name="Tck.TestCases.LoginAccount">
         <methods>
-          <include name="tearDownExtentReports"/>
           <include name="setUpExtentReports"/>
+          <include name="tearDownExtentReports"/>
           <include name="setUp"/>
           <include name="loginWithInvalidPassword"/>
           <include name="tearDown"/>
-          <include name="loginWithBlankEmail"/>
         </methods>
       </class> <!-- Tck.TestCases.LoginAccount -->
     </classes>
