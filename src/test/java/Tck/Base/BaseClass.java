@@ -159,7 +159,43 @@ public class BaseClass {
 	public void tearDown() {
 		driver.quit();
 	}
+	@AfterSuite(alwaysRun = true)
+	public void tearDownExtentReports() {
 
+	    if (extent != null) {
+	        extent.flush();
+	        System.out.println("Extent Report Flushed ✅");
+	    }
+
+	    try {
+
+	        String reportFolder =
+	                System.getProperty("user.dir")+ "/test-output/Extend-Reports/";
+
+	        File dir = new File(reportFolder);
+
+	        File latestFile = null;
+
+	        for (File file : dir.listFiles()) {
+	            if (latestFile == null ||
+	                file.lastModified() > latestFile.lastModified()) {
+
+	                latestFile = file;
+	            }
+	        }
+
+	        if (latestFile != null) {
+	        	//Define Email Subject and Body
+	            Tck.Utilities.EmailUtils
+	                    .sendEmailWithReport(
+	                            latestFile.getAbsolutePath());
+	        }
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
+/*
 	@AfterSuite(alwaysRun = true)
 	public void tearDownExtentReports() {
 
@@ -168,4 +204,5 @@ public class BaseClass {
 			System.out.println("Extent Report Flushed ✅");
 		}
 	}
+	*/
 }
