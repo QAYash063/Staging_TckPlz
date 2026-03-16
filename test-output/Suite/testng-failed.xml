@@ -8,15 +8,13 @@
       </run>
     </groups>
     <classes>
-      <class name="Tck.TestCases.LoginAccount">
+      <class name="Tck.TestCases.EditProfile">
         <methods>
-          <include name="setUpExtentReports"/>
-          <include name="tearDownExtentReports"/>
+          <include name="emptyProfileUpdate"/>
+          <include name="tearDownSuite"/>
           <include name="setUp"/>
-          <include name="loginWithInvalidPassword"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- Tck.TestCases.LoginAccount -->
+      </class> <!-- Tck.TestCases.EditProfile -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

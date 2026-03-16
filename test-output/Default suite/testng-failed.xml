@@ -5,9 +5,9 @@
     <classes>
       <class name="Tck.TestCases.LoginAccount">
         <methods>
+          <include name="tearDownSuite"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="loginWithBlankEmail"/>
+          <include name="loginWithValid"/>
         </methods>
       </class> <!-- Tck.TestCases.LoginAccount -->
     </classes>

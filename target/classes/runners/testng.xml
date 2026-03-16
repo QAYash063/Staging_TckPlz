@@ -9,6 +9,7 @@
 		</groups>
 		<classes>
 			<class name="Tck.TestCases.LoginAccount" />
+			<class name="Tck.TestCases.EditProfile" />
 		</classes>
 	</test> <!--
 	Test -->

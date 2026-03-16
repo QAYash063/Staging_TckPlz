@@ -8,14 +8,18 @@ import javax.activation.FileDataSource;
 import javax.mail.*;
 import javax.mail.internet.*;
 
-public class EmailUtils {
+import Tck.Base.BaseClass;
+
+public class EmailUtils extends BaseClass {
 
     public static void sendEmailWithReport(String reportPath)
             throws Exception {
 
-        final String fromEmail = "yash.c@dreamcast.co";
-        final String password = "qmnvbgukflmsxnqf";
-        final String toEmail = "lalit@dreamcast.co";
+        final String fromEmail = Config.getProperty("senderEmail");
+        final String password = Config.getProperty("senderPassword");
+        final String toEmail = Config.getProperty("receiverEmail");
+       // final String password = "qmnvbgukflmsxnqf";
+       // final String toEmail = "lalit@dreamcast.co";
 
         Properties props = new Properties();
 
@@ -52,7 +56,7 @@ public class EmailUtils {
                 "Hello Team,\n"
                 + "The automation test execution has completed successfully.\n"
                 + "Please find the attached Extent Report for detailed results.\n"
-                + "Regards,\\nAutomation Framework");
+                + "Regards, \n" + "Automation Framework");
 
         Multipart multipart =
                 new MimeMultipart();

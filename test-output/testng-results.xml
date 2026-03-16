@@ -1,46 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-05T15:38:25 IST" name="Suite" finished-at="2026-03-05T15:38:33 IST" duration-ms="8501">
+  <suite started-at="2026-03-16T12:15:40 IST" name="Suite" finished-at="2026-03-16T12:15:55 IST" duration-ms="14718">
     <groups>
       <group name="negative">
-        <method signature="LoginAccount.loginWithBlankEmail()[pri:0, instance:Tck.TestCases.LoginAccount@28701274]" name="loginWithBlankEmail" class="Tck.TestCases.LoginAccount"/>
-        <method signature="LoginAccount.loginWithInvalidEmail()[pri:0, instance:Tck.TestCases.LoginAccount@28701274]" name="loginWithInvalidEmail" class="Tck.TestCases.LoginAccount"/>
-        <method signature="LoginAccount.loginWithInvalidPassword()[pri:0, instance:Tck.TestCases.LoginAccount@28701274]" name="loginWithInvalidPassword" class="Tck.TestCases.LoginAccount"/>
+        <method signature="EditProfile.emptyProfileUpdate()[pri:0, instance:Tck.TestCases.EditProfile@c730b35]" name="emptyProfileUpdate" class="Tck.TestCases.EditProfile"/>
+        <method signature="LoginAccount.loginWithBlankEmail()[pri:0, instance:Tck.TestCases.LoginAccount@5b7a5baa]" name="loginWithBlankEmail" class="Tck.TestCases.LoginAccount"/>
+        <method signature="LoginAccount.loginWithInvalidEmail()[pri:0, instance:Tck.TestCases.LoginAccount@5b7a5baa]" name="loginWithInvalidEmail" class="Tck.TestCases.LoginAccount"/>
+        <method signature="LoginAccount.loginWithInvalidPassword()[pri:0, instance:Tck.TestCases.LoginAccount@5b7a5baa]" name="loginWithInvalidPassword" class="Tck.TestCases.LoginAccount"/>
       </group> <!-- negative -->
     </groups>
-    <test started-at="2026-03-05T15:38:25 IST" name="Test" finished-at="2026-03-05T15:38:33 IST" duration-ms="8501">
+    <test started-at="2026-03-16T12:15:40 IST" name="Test" finished-at="2026-03-16T12:15:55 IST" duration-ms="14718">
       <class name="Tck.TestCases.LoginAccount">
-        <test-method is-config="true" signature="setUpExtentReports()[pri:0, instance:Tck.TestCases.LoginAccount@28701274]" started-at="2026-03-05T15:38:24 IST" name="setUpExtentReports" finished-at="2026-03-05T15:38:25 IST" duration-ms="217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpExtentReports -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tck.TestCases.LoginAccount@28701274]" started-at="2026-03-05T15:38:25 IST" name="setUp" finished-at="2026-03-05T15:38:27 IST" duration-ms="2973" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tck.TestCases.LoginAccount@5b7a5baa]" started-at="2026-03-16T12:15:36 IST" name="setUp" finished-at="2026-03-16T12:15:40 IST" duration-ms="4254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithBlankEmail()[pri:0, instance:Tck.TestCases.LoginAccount@28701274]" started-at="2026-03-05T15:38:28 IST" name="loginWithBlankEmail" finished-at="2026-03-05T15:38:28 IST" duration-ms="670" status="PASS">
+        <test-method signature="loginWithBlankEmail()[pri:0, instance:Tck.TestCases.LoginAccount@5b7a5baa]" started-at="2026-03-16T12:15:40 IST" name="loginWithBlankEmail" finished-at="2026-03-16T12:15:41 IST" duration-ms="690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithBlankEmail -->
-        <test-method signature="loginWithInvalidEmail()[pri:0, instance:Tck.TestCases.LoginAccount@28701274]" started-at="2026-03-05T15:38:28 IST" name="loginWithInvalidEmail" finished-at="2026-03-05T15:38:30 IST" duration-ms="1610" status="PASS">
+        <test-method signature="loginWithInvalidEmail()[pri:0, instance:Tck.TestCases.LoginAccount@5b7a5baa]" started-at="2026-03-16T12:15:41 IST" name="loginWithInvalidEmail" finished-at="2026-03-16T12:15:43 IST" duration-ms="1862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidEmail -->
-        <test-method signature="loginWithInvalidPassword()[pri:0, instance:Tck.TestCases.LoginAccount@28701274]" started-at="2026-03-05T15:38:30 IST" name="loginWithInvalidPassword" finished-at="2026-03-05T15:38:33 IST" duration-ms="3103" status="PASS">
+        <test-method signature="loginWithInvalidPassword()[pri:0, instance:Tck.TestCases.LoginAccount@5b7a5baa]" started-at="2026-03-16T12:15:43 IST" name="loginWithInvalidPassword" finished-at="2026-03-16T12:15:48 IST" duration-ms="5178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tck.TestCases.LoginAccount@28701274]" started-at="2026-03-05T15:38:33 IST" name="tearDown" finished-at="2026-03-05T15:38:33 IST" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:Tck.TestCases.LoginAccount@5b7a5baa]" started-at="2026-03-16T12:16:00 IST" name="tearDownSuite" finished-at="2026-03-16T12:16:03 IST" duration-ms="2512" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownExtentReports()[pri:0, instance:Tck.TestCases.LoginAccount@28701274]" started-at="2026-03-05T15:38:38 IST" name="tearDownExtentReports" finished-at="2026-03-05T15:38:43 IST" duration-ms="5086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownExtentReports -->
+        </test-method> <!-- tearDownSuite -->
       </class> <!-- Tck.TestCases.LoginAccount -->
+      <class name="Tck.TestCases.EditProfile">
+        <test-method signature="emptyProfileUpdate()[pri:0, instance:Tck.TestCases.EditProfile@c730b35]" started-at="2026-03-16T12:15:48 IST" name="emptyProfileUpdate" finished-at="2026-03-16T12:15:55 IST" duration-ms="6937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyProfileUpdate -->
+      </class> <!-- Tck.TestCases.EditProfile -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
