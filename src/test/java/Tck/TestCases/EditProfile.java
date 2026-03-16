@@ -5,21 +5,20 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Tck.Base.BaseClass;
+import Tck.Utilities.SeleniumDriver;
 
 public class EditProfile extends BaseClass {
 
-	/*
-	 * =============================== Helper Method: Open Profile Option by Index
-	 * ===============================
-	 */
+	/* ==========================================
+	   Helper Method: Open Profile Option by Index
+	   =============================== */
 	public void openProfileOption(int optionIndex) {
 		waitForClick(By.xpath(OR.getProperty("ProfileIcon"))).click();
 
-		List<WebElement> profileMenuItems = driver.findElements(By.xpath(OR.getProperty("ProfileIconDropDown")));
+		List<WebElement> profileMenuItems = SeleniumDriver.getDriver().findElements(By.xpath(OR.getProperty("ProfileIconDropDown")));
 		profileMenuItems.get(optionIndex).click();
 	}
 

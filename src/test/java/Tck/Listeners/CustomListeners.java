@@ -9,6 +9,7 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentTest;
 
 import Tck.Base.BaseClass;
+import Tck.Utilities.SeleniumDriver;
 
 public class CustomListeners extends BaseClass implements ITestListener {
 
@@ -37,7 +38,7 @@ public class CustomListeners extends BaseClass implements ITestListener {
 
         try {
             // Take screenshot as Base64 (embedded only, not saved)
-            String base64Screenshot = ((TakesScreenshot) driver)
+            String base64Screenshot = ((TakesScreenshot) SeleniumDriver.getDriver())
                     .getScreenshotAs(OutputType.BASE64);
 
             test.get().addScreenCaptureFromBase64String(base64Screenshot, "Failed Screenshot");

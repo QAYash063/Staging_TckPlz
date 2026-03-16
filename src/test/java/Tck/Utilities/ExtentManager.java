@@ -13,10 +13,6 @@ public class ExtentManager {
 
         if (extent == null) {
 
-      //      String timeStamp =
-        //    new java.text.SimpleDateFormat("EEE, dd MMM HH:mm")
-         //   .format(new java.util.Date());
-        //    java.text.SimpleDateFormat("yyyyMMdd_HHmmss") .format(new java.util.Date());
         	String timeStamp =
     				new java.text.SimpleDateFormat("yyyyMMdd_HHmmss").format(new java.util.Date());
 
