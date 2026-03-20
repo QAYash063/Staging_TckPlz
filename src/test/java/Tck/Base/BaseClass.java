@@ -1,6 +1,5 @@
 package Tck.Base;
 
-import org.testng.Assert;
 import java.io.FileInputStream;
 import java.util.NoSuchElementException;
 import java.util.Properties;
@@ -93,9 +92,6 @@ public class BaseClass {
      }
  }
 
- protected void verifyEquals(String actual, String expected) {
-     Assert.assertEquals(actual, expected);
- }
 
  /* ===============================
     REUSABLE LOGIN METHOD

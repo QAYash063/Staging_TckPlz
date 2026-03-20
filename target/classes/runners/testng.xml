@@ -4,12 +4,13 @@
 	<test thread-count="5" name="Test">
 		<groups>
 			<run>
-				<include name="negative" />
+				<include name="positive" />
 			</run>
 		</groups>
 		<classes>
 			<class name="Tck.TestCases.LoginAccount" />
 			<class name="Tck.TestCases.EditProfile" />
+			<class name="Tck.TestCases.CreateEvent" />
 		</classes>
 	</test> <!--
 	Test -->

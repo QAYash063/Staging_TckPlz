@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import Tck.Base.BaseClass;
 import Tck.Listeners.CustomListeners;
+import Tck.Utilities.AssertUtil;
 import Tck.Utilities.SeleniumDriver;
 
 public class LoginAccount extends BaseClass {
@@ -31,8 +32,7 @@ public class LoginAccount extends BaseClass {
         waitForClick(By.xpath(OR.getProperty("ContinueWithEmailBtn"))).click();
 
         String actualText = waitForVisibility(By.xpath(OR.getProperty("BlankEmailValidation"))).getText();
-        verifyEquals(actualText, "Email can't be blank.");
-
+        AssertUtil.hardEquals(actualText, "Email can't be blank.", "Blank email validation message mismatch");
         
         CustomListeners.test.get().info("Blank email validation checked");
     }
@@ -48,8 +48,7 @@ public class LoginAccount extends BaseClass {
         waitForClick(By.xpath(OR.getProperty("ContinueWithEmailBtn"))).click();
 
         String actualText = waitForVisibility(By.xpath(OR.getProperty("InvalidEmailValidation1"))).getText();
-        verifyEquals(actualText, "Please sign up with a different email address.");
-
+        AssertUtil.hardEquals(actualText, "Please sign up with a different email address.", "Invalid email validation message mismatch");
         CustomListeners.test.get().info("Invalid email validation checked");
     }
 
@@ -68,7 +67,7 @@ public class LoginAccount extends BaseClass {
         waitForClick(By.xpath(OR.getProperty("SubmitLogin"))).click();
 
         String actualText = waitForVisibility(By.xpath(OR.getProperty("InvalidPasswordVlaidation"))).getText();
-        verifyEquals(actualText, "Incorrect password.");
+        AssertUtil.hardEquals(actualText, "Incorrect password.", "Invalid password validation message mismatch");
 
         CustomListeners.test.get().info("Invalid password validation checked");
     }
