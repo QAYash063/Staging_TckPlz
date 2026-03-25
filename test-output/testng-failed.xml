@@ -10,6 +10,7 @@
     <classes>
       <class name="Tck.TestCases.CreateEvent">
         <methods>
+          <include name="openEventOption"/>
           <include name="tearDownSuite"/>
           <include name="setUpSuite"/>
           <include name="createEventValid"/>

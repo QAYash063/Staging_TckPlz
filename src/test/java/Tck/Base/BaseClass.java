@@ -1,5 +1,8 @@
 package Tck.Base;
 
+import java.io.File;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.io.FileInputStream;
 import java.util.NoSuchElementException;
 import java.util.Properties;
@@ -18,110 +21,142 @@ import com.aventstack.extentreports.ExtentReports;
 
 @Listeners(Tck.Listeners.CustomListeners.class)
 public class BaseClass {
+	
+	private static final Logger log = LogManager.getLogger(BaseClass.class);
 	// Thread-safe WebDriver instance
-    protected WebDriver driver;
+	protected WebDriver driver;
 
-    // Properties
-    public static Properties Config;
-    public static Properties OR;
+	// Properties
+	public static Properties Config;
+	public static Properties OR;
 
-    // ExtentReports (initialized but no logging inside BaseClass methods)
-    public static ExtentReports extent;
+	// ExtentReports (initialized but no logging inside BaseClass methods)
+	public static ExtentReports extent;
 
-    /* ===============================
-    DRIVER AND EXTENT REPORT SETUP
-    =============================== */
- @BeforeSuite(alwaysRun = true)
- public void setUpSuite() {
-     // Initialize Extent Reports
-     extent = ExtentManager.getInstance();
+	/*
+	 * =============================== DRIVER AND EXTENT REPORT SETUP
+	 * ===============================
+	 */
+	@BeforeSuite(alwaysRun = true)
+	public void setUpSuite() {
 
-     // Load properties
-     Config = new Properties();
-     OR = new Properties();
+	    log.info("========= Suite Execution Started =========");
 
-     try (FileInputStream configFis = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/properties/Config.properties");
-          FileInputStream orFis = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/properties/OR.properties")) {
+	    // Initialize Extent Reports
+	    extent = ExtentManager.getInstance();
+	    log.info("Extent Report initialized");
 
-         Config.load(configFis);
-         OR.load(orFis);
+	    Config = new Properties();
+	    OR = new Properties();
 
-     } catch (Exception e) {
-         e.printStackTrace();
-         throw new RuntimeException("Failed to load properties");
-     }
+	    try (FileInputStream configFis = new FileInputStream(
+	            System.getProperty("user.dir") + "/src/test/resources/properties/Config.properties");
+	         FileInputStream orFis = new FileInputStream(
+	            System.getProperty("user.dir") + "/src/test/resources/properties/OR.properties")) {
 
-     // Setup driver once for the suite
-     SeleniumDriver.setUpDriver();
- }
+	        Config.load(configFis);
+	        OR.load(orFis);
 
- /* ===============================
-    SMART WAITS
-    =============================== */
- protected WebElement waitForVisibility(By locator) {
-     return SeleniumDriver.getWaitDriver().until(ExpectedConditions.visibilityOfElementLocated(locator));
- }
+	        log.info("Properties files loaded successfully");
 
- protected WebElement waitForClick(By locator) {
-     return SeleniumDriver.getWaitDriver().until(ExpectedConditions.elementToBeClickable(locator));
- }
+	    } catch (Exception e) {
+	        log.error("Failed to load properties files", e);
+	        throw new RuntimeException("Failed to load properties");
+	    }
 
- protected WebElement waitForPresence(By locator) {
-     return SeleniumDriver.getWaitDriver().until(ExpectedConditions.presenceOfElementLocated(locator));
- }
+	    // Setup driver
+	    SeleniumDriver.setUpDriver();
+	    log.info("WebDriver initialized successfully");
+	}
 
- /* ===============================
-    COMMON UTILITIES
-    =============================== */
- public void jsClick(WebElement element) {
-     ((JavascriptExecutor) SeleniumDriver.getDriver())
-             .executeScript("arguments[0].scrollIntoView(true); arguments[0].click();", element);
- }
+	/*
+	 * =============================== SMART WAITS ===============================
+	 */
+	protected WebElement waitForVisibility(By locator) {
+		log.debug("Waiting for visibility of element: " + locator);
+		return SeleniumDriver.getWaitDriver().until(ExpectedConditions.visibilityOfElementLocated(locator));
+	}
 
- public void jsClear(WebElement input) {
-     ((JavascriptExecutor) SeleniumDriver.getDriver())
-             .executeScript("arguments[0].value='';", input);
- }
+	protected WebElement waitForClick(By locator) {
+		log.debug("Waiting for Click of element: " + locator);
+		return SeleniumDriver.getWaitDriver().until(ExpectedConditions.elementToBeClickable(locator));
+	}
 
- public boolean isElementPresent(By by) {
-     try {
-         SeleniumDriver.getDriver().findElement(by);
-         return true;
-     } catch (NoSuchElementException e) {
-         return false;
-     }
- }
+	protected WebElement waitForPresence(By locator) {
+		log.debug("Waiting for Presence of element: " + locator);
+		return SeleniumDriver.getWaitDriver().until(ExpectedConditions.presenceOfElementLocated(locator));
+	}
 
+	/*
+	 * =============================== COMMON UTILITIES
+	 * ===============================
+	 */
+	public void jsClick(WebElement element) {
+		((JavascriptExecutor) SeleniumDriver.getDriver())
+				.executeScript("arguments[0].scrollIntoView(true); arguments[0].click();", element);
+	}
 
- /* ===============================
-    REUSABLE LOGIN METHOD
-    Call manually in tests when needed
-    =============================== */
- public void doLogin() {
-     WebDriver driver = SeleniumDriver.getDriver();
-     String email = Config.getProperty("Email");
-     String password = Config.getProperty("Password");
+	public void jsClear(WebElement input) {
+		((JavascriptExecutor) SeleniumDriver.getDriver()).executeScript("arguments[0].value='';", input);
+	}
 
-     driver.get(Config.getProperty("testSiteUrl"));
-     waitForPresence(By.xpath(OR.getProperty("EnterEmail"))).sendKeys(email);
-     waitForClick(By.xpath(OR.getProperty("ContinueWithEmailBtn"))).click();
-     waitForPresence(By.xpath(OR.getProperty("EnterPassword"))).sendKeys(password);
-     waitForClick(By.xpath(OR.getProperty("SubmitLogin"))).click();
-     waitForClick(By.xpath(OR.getProperty("SkipPhone"))).click();
- }
+	public boolean isElementPresent(By by) {
+		try {
+			SeleniumDriver.getDriver().findElement(by);
+			return true;
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+	}
 
-    /* =============================== 
-       TEARDOWN SUITE
-       =============================== */
+	/*
+	 * =============================== REUSABLE LOGIN METHOD Call manually in tests
+	 * when needed ===============================
+	 */
+	public void doLogin() {
+
+	    log.info("Starting login process");
+
+	    WebDriver driver = SeleniumDriver.getDriver();
+	    String email = Config.getProperty("Email");
+	    String password = Config.getProperty("Password");
+
+	    log.debug("Navigating to URL: " + Config.getProperty("testSiteUrl"));
+	    driver.get(Config.getProperty("testSiteUrl"));
+
+	    log.info("Entering email");
+	    waitForPresence(By.xpath(OR.getProperty("EnterEmail"))).sendKeys(email);
+
+	    log.info("Clicking Continue button");
+	    waitForClick(By.xpath(OR.getProperty("ContinueWithEmailBtn"))).click();
+
+	    log.info("Entering password");
+	    waitForPresence(By.xpath(OR.getProperty("EnterPassword"))).sendKeys(password);
+
+	    log.info("Submitting login");
+	    waitForClick(By.xpath(OR.getProperty("SubmitLogin"))).click();
+
+	    log.info("Handling skip phone");
+	    waitForClick(By.xpath(OR.getProperty("SkipPhone"))).click();
+
+	    log.info("Login process completed");
+	}
+
+	/*
+	 * =============================== TEARDOWN SUITE
+	 * ===============================
+	 */
 
 	@AfterSuite(alwaysRun = true)
 	public void tearDownSuite() {
-        SeleniumDriver.tearDown();
 
-        if (extent != null) {
-            extent.flush();
-            System.out.println("Extent Report Flushed ✅");
-        }
+	    log.info("Closing WebDriver...");
+	    SeleniumDriver.tearDown();
+
+	    if (extent != null) {
+	        extent.flush();
+	        log.info("Extent Report flushed successfully");
+	    }
 
       
 /*
@@ -144,6 +179,7 @@ public class BaseClass {
 			if (latestFile != null) {
 
 				System.out.println("Sending Email with Report...");
+				System.out.println("Test 1");
 
 				Tck.Utilities.EmailUtils.sendEmailWithReport(latestFile.getAbsolutePath());
 
@@ -151,8 +187,8 @@ public class BaseClass {
 
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-*/
-		System.out.println("Suite Execution Completed");
+		}*/
+
+	    log.info("========= Suite Execution Completed =========");
 	}
 }

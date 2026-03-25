@@ -12,76 +12,65 @@ import Tck.Base.BaseClass;
 
 public class EmailUtils extends BaseClass {
 
-    public static void sendEmailWithReport(String reportPath)
-            throws Exception {
+	public static void sendEmailWithReport(String reportPath, String logPath)
+	        throws Exception {
 
-        final String fromEmail = Config.getProperty("senderEmail");
-        final String password = Config.getProperty("senderPassword");
-        final String toEmail = Config.getProperty("receiverEmail");
-       // final String password = "qmnvbgukflmsxnqf";
-       // final String toEmail = "lalit@dreamcast.co";
+	    final String fromEmail = Config.getProperty("senderEmail");
+	    final String password = Config.getProperty("senderPassword");
+	    final String toEmail = Config.getProperty("receiverEmail");
 
-        Properties props = new Properties();
+	    Properties props = new Properties();
 
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.port", "587");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.starttls.enable", "true");
+	    props.put("mail.smtp.host", "smtp.gmail.com");
+	    props.put("mail.smtp.port", "587");
+	    props.put("mail.smtp.auth", "true");
+	    props.put("mail.smtp.starttls.enable", "true");
 
-        Session session = Session.getInstance(
-                props,
-                new Authenticator() {
-                    protected PasswordAuthentication
-                    getPasswordAuthentication() {
-                        return new PasswordAuthentication(
-                                fromEmail, password);
-                    }
-                });
+	    Session session = Session.getInstance(
+	            props,
+	            new Authenticator() {
+	                protected PasswordAuthentication getPasswordAuthentication() {
+	                    return new PasswordAuthentication(fromEmail, password);
+	                }
+	            });
 
-        Message message = new MimeMessage(session);
+	    Message message = new MimeMessage(session);
 
-        message.setFrom(new InternetAddress(fromEmail));
-        message.setRecipients(
-                Message.RecipientType.TO,
-                InternetAddress.parse(toEmail));
+	    message.setFrom(new InternetAddress(fromEmail));
+	    message.setRecipients(Message.RecipientType.TO,
+	            InternetAddress.parse(toEmail));
 
-        message.setSubject(
-                "Automation Execution Report ✅");
+	    message.setSubject("Automation Execution Report ✅");
 
-        // Email Body
-        BodyPart messageBodyPart =
-                new MimeBodyPart();
+	    BodyPart messageBodyPart = new MimeBodyPart();
 
-        messageBodyPart.setText(
-                "Hello Team,\n"
-                + "The automation test execution has completed successfully.\n"
-                + "Please find the attached Extent Report for detailed results.\n"
-                + "Regards, \n" + "Automation Framework");
+	    messageBodyPart.setText(
+	            "Hello Team,\n"
+	            + "Automation execution completed.\n"
+	            + "Attached:\n"
+	            + "1. Extent Report\n"
+	            + "2. Log4j Execution Logs\n\n"
+	            + "Regards,\nAutomation Framework");
 
-        Multipart multipart =
-                new MimeMultipart();
+	    Multipart multipart = new MimeMultipart();
+	    multipart.addBodyPart(messageBodyPart);
 
-        multipart.addBodyPart(messageBodyPart);
+	    // Extent Report
+	    MimeBodyPart extentAttachment = new MimeBodyPart();
+	    extentAttachment.setDataHandler(new DataHandler(new FileDataSource(reportPath)));
+	    extentAttachment.setFileName(new File(reportPath).getName());
+	    multipart.addBodyPart(extentAttachment);
 
-        // Attach Report
-        MimeBodyPart attachmentPart =
-                new MimeBodyPart();
+	    // Log4j Report
+	    MimeBodyPart logAttachment = new MimeBodyPart();
+	    logAttachment.setDataHandler(new DataHandler(new FileDataSource(logPath)));
+	    logAttachment.setFileName(new File(logPath).getName());
+	    multipart.addBodyPart(logAttachment);
 
-        FileDataSource source =
-                new FileDataSource(reportPath);
+	    message.setContent(multipart);
 
-        attachmentPart.setDataHandler(
-                new DataHandler(source));
+	    Transport.send(message);
 
-        attachmentPart.setFileName(
-                new File(reportPath).getName());
-
-        multipart.addBodyPart(attachmentPart);
-
-        message.setContent(multipart);
-
-        Transport.send(message);
-
-        System.out.println("✅ Email Sent Successfully");
-    }
+	    System.out.println("✅ Email Sent with Extent + Log4j Reports!");
+	}
 }

@@ -27,7 +27,8 @@ public class CreateEvent extends BaseClass {
 		
 		
 		openEventOption("Create Event");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
+		//SeleniumDriver.getWaitDriver().until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty("EventNameField"))));
 		String eventName = "Test Event"+DateUtils.getCurrentTime();
 		waitForPresence(By.xpath(OR.getProperty("EventNameField"))).sendKeys(eventName);
 		System.out.println(waitForPresence(By.xpath(OR.getProperty("EventNameField"))).getText());
@@ -48,7 +49,9 @@ public class CreateEvent extends BaseClass {
 	    DropDownUtills.selectByText(By.xpath(OR.getProperty("CategoryMethodBtn")), By.xpath(OR.getProperty("CategoryMethodDropDown")), "Standard");
 		waitForPresence(By.xpath(OR.getProperty("CreateCategoryBtn"))).click();
 		waitForPresence(By.xpath(OR.getProperty("EventCreateFormBtn"))).click();
-		Thread.sleep(3000);
+		waitForVisibility(By.xpath(OR.getProperty("EDitEventBtn")));
+		isElementPresent(By.xpath(OR.getProperty("EDitEventBtn")));
+		
 		CustomListeners.test.get().info("Created event with name: " + eventName);
 		
 	}

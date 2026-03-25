@@ -1,0 +1,14 @@
+2026-03-25 10:30:17 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 10:30:17 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 10:30:17 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 10:30:20 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 10:30:20 INFO  BaseClass:118 - Starting login process
+2026-03-25 10:30:20 INFO  BaseClass:127 - Entering email
+2026-03-25 10:30:20 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 10:30:21 INFO  BaseClass:133 - Entering password
+2026-03-25 10:30:21 INFO  BaseClass:136 - Submitting login
+2026-03-25 10:30:21 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 10:30:22 INFO  BaseClass:142 - Login process completed
+2026-03-25 10:30:52 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 10:30:55 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 10:30:55 INFO  BaseClass:192 - ========= Suite Execution Completed =========
