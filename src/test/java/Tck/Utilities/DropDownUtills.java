@@ -11,7 +11,7 @@ public class DropDownUtills {
 	public static void selectByText(By dropdownIcon, By optionsLocator, String value) {
 
 		try {
-		    Thread.sleep(5000); // simulate wait or pause
+		    Thread.sleep(3000); // simulate wait or pause
 		} catch (InterruptedException e) {
 		    // Throw a runtime exception with a custom message
 		    throw new RuntimeException("Dropdown utility class failed during wait/sleep: " + e.getMessage(), e);
@@ -34,6 +34,12 @@ public class DropDownUtills {
 	            option.click();
 	            break;
 	        }
+	        try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	    }
 	}
 	

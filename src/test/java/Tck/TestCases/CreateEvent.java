@@ -3,10 +3,12 @@ package Tck.TestCases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Tck.Base.BaseClass;
 import Tck.Listeners.CustomListeners;
+import Tck.Utilities.AssertUtil;
 import Tck.Utilities.DateUtils;
 import Tck.Utilities.DropDownUtills;
 import Tck.Utilities.SeleniumDriver;
@@ -27,7 +29,7 @@ public class CreateEvent extends BaseClass {
 		
 		
 		openEventOption("Create Event");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		//SeleniumDriver.getWaitDriver().until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty("EventNameField"))));
 		String eventName = "Test Event"+DateUtils.getCurrentTime();
 		waitForPresence(By.xpath(OR.getProperty("EventNameField"))).sendKeys(eventName);
@@ -61,9 +63,18 @@ public class CreateEvent extends BaseClass {
 	
 	
 	@Test(groups = { "negative" })
-	public void createEvent() throws InterruptedException {
-		
-		openEventOption("Create Event");
+	public void createEventWithoutName() throws InterruptedException {
+
+	    openEventOption("Create Event");
+
+	    waitForPresence(By.xpath(OR.getProperty("EventNameField"))).sendKeys("");
+
+	    WebElement FormCreateBTN = waitForClick(By.xpath(OR.getProperty("EventCreateFormBtn")));
+	    jsClick(FormCreateBTN);
+
+		AssertUtil.booleanHardTrue(isElementPresent(By.xpath(OR.getProperty("EmpityFieldValidationCreateEvent"))),"Empty event name validation message not displayed");
+		log.info("Verified event creation fails without name");
+
 	}
 	
 	

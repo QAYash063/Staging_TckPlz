@@ -19,5 +19,9 @@ public class AssertUtil {
 	    public static void hardEquals(String actual, String expected, String message) {
 	        Assert.assertEquals(actual, expected, message);
 	    }
+	    
+		public static void booleanHardTrue(boolean condition, String message) {
+			Assert.assertTrue(condition, message);
+		}
 
 }

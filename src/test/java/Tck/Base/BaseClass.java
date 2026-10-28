@@ -22,7 +22,7 @@ import com.aventstack.extentreports.ExtentReports;
 @Listeners(Tck.Listeners.CustomListeners.class)
 public class BaseClass {
 	
-	private static final Logger log = LogManager.getLogger(BaseClass.class);
+	protected static final Logger log = LogManager.getLogger(BaseClass.class);
 	// Thread-safe WebDriver instance
 	protected WebDriver driver;
 

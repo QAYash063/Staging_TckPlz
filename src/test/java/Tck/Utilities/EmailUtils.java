@@ -49,7 +49,7 @@ public class EmailUtils extends BaseClass {
 	            + "Automation execution completed.\n"
 	            + "Attached:\n"
 	            + "1. Extent Report\n"
-	            + "2. Log4j Execution Logs\n\n"
+	            + "2. Log4j Execution Logs\n"
 	            + "Regards,\nAutomation Framework");
 
 	    Multipart multipart = new MimeMultipart();

@@ -12,3 +12,944 @@
 2026-03-25 10:30:52 INFO  BaseClass:153 - Closing WebDriver...
 2026-03-25 10:30:55 INFO  BaseClass:158 - Extent Report flushed successfully
 2026-03-25 10:30:55 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-25 11:27:01 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 11:27:01 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 11:27:01 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 11:27:04 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 11:27:04 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 11:27:04 INFO  BaseClass:131 - Entering email: yash.c+2212@dreamcast.co
+2026-03-25 11:27:05 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 11:27:05 INFO  BaseClass:141 - OTP requested at: 2026-03-25 11:27
+2026-03-25 11:27:05 ERROR BaseClass:183 - Error during login process
+java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+	at org.openqa.selenium.By$ByXPath.<init>(By.java:339) ~[selenium-api-3.141.59.jar:?]
+	at org.openqa.selenium.By.xpath(By.java:92) ~[selenium-api-3.141.59.jar:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:144) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 11:27:05 INFO  BaseClass:195 - Closing WebDriver...
+2026-03-25 11:27:05 INFO  BaseClass:200 - Extent Report flushed successfully
+2026-03-25 11:27:05 INFO  BaseClass:234 - ========= Suite Execution Completed =========
+2026-03-25 11:31:24 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 11:31:24 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 11:31:24 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 11:31:27 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 11:31:27 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 11:31:27 INFO  BaseClass:131 - Entering email: yash.c+2212@dreamcast.co
+2026-03-25 11:31:28 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 11:31:28 INFO  BaseClass:141 - OTP requested at: 2026-03-25 11:31
+2026-03-25 11:31:28 INFO  BaseClass:146 - OTP input detected. Fetching OTP...
+2026-03-25 11:31:28 INFO  EmailOTPReader:28 - Connecting to email inbox: yash.c+544545@dreamcast.co
+2026-03-25 11:48:47 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 11:48:47 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 11:48:47 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 11:48:49 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 11:48:49 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 11:48:50 INFO  BaseClass:131 - Entering email: yash.c+2212@dreamcast.co
+2026-03-25 11:48:51 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 11:48:51 INFO  BaseClass:141 - OTP requested at: 2026-03-25 11:48
+2026-03-25 11:48:51 INFO  BaseClass:146 - OTP input detected. Fetching OTP...
+2026-03-25 11:48:51 INFO  BaseClass:24 - Connecting to email inbox: yash.c+544545@dreamcast.co
+2026-03-25 11:55:36 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 11:55:36 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 11:55:36 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 11:55:39 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 11:55:39 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 11:55:39 INFO  BaseClass:131 - Entering email: yash.c+2212@dreamcast.co
+2026-03-25 11:55:39 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 11:55:40 INFO  BaseClass:141 - OTP requested at: 2026-03-25 11:55
+2026-03-25 11:55:40 INFO  BaseClass:146 - OTP input detected. Fetching OTP...
+2026-03-25 11:55:40 INFO  BaseClass:24 - Connecting to email inbox: yash.c+544545@dreamcast.co
+2026-03-25 12:01:08 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 12:01:09 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 12:01:09 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 12:01:11 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 12:01:11 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 12:01:11 INFO  BaseClass:131 - Entering email: yash.c+2212@dreamcast.co
+2026-03-25 12:01:12 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 12:01:12 INFO  BaseClass:141 - OTP requested at: 2026-03-25 12:01
+2026-03-25 12:01:12 INFO  BaseClass:146 - OTP input detected. Fetching OTP...
+2026-03-25 12:01:12 INFO  EmailOTPReader:27 - Connecting to email inbox: yash.c+544545@dreamcast.co
+2026-03-25 12:04:16 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 12:04:16 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 12:04:16 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 12:04:18 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 12:04:18 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 12:04:19 INFO  BaseClass:131 - Entering email: yash.c@dreamcast.co
+2026-03-25 12:04:19 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 12:04:20 INFO  BaseClass:141 - OTP requested at: 2026-03-25 12:04
+2026-03-25 12:04:20 INFO  BaseClass:146 - OTP input detected. Fetching OTP...
+2026-03-25 12:04:20 INFO  EmailOTPReader:27 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 12:08:48 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 12:08:48 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 12:08:48 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 12:08:51 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 12:08:51 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 12:08:51 INFO  BaseClass:131 - Entering email: yash.c@dreamcast.co
+2026-03-25 12:08:52 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 12:08:52 INFO  BaseClass:141 - OTP requested at: 2026-03-25 12:08
+2026-03-25 12:08:52 INFO  BaseClass:146 - OTP input detected. Fetching OTP...
+2026-03-25 12:08:52 INFO  EmailOTPReader:39 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 12:08:54 INFO  EmailOTPReader:53 - Connected to IMAP store successfully
+2026-03-25 12:08:54 INFO  EmailOTPReader:57 - Inbox opened. Total messages: 2486
+2026-03-25 12:09:55 ERROR BaseClass:183 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:105) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:149) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 12:10:01 INFO  BaseClass:195 - Closing WebDriver...
+2026-03-25 12:10:01 INFO  BaseClass:200 - Extent Report flushed successfully
+2026-03-25 12:10:01 INFO  BaseClass:234 - ========= Suite Execution Completed =========
+2026-03-25 12:13:20 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 12:13:20 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 12:13:20 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 12:13:22 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 12:13:22 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 12:13:23 INFO  BaseClass:131 - Entering email: yash.c@dreamcast.co
+2026-03-25 12:13:23 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 12:13:23 INFO  BaseClass:141 - OTP requested at: 2026-03-25 12:13
+2026-03-25 12:13:24 INFO  BaseClass:146 - OTP input detected. Fetching OTP...
+2026-03-25 12:13:24 INFO  EmailOTPReader:39 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 12:13:26 INFO  EmailOTPReader:53 - Connected to IMAP store successfully
+2026-03-25 12:13:26 INFO  EmailOTPReader:57 - Inbox opened. Total messages: 2487
+2026-03-25 12:14:31 ERROR BaseClass:183 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:106) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:149) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 12:14:36 INFO  BaseClass:195 - Closing WebDriver...
+2026-03-25 12:14:36 INFO  BaseClass:200 - Extent Report flushed successfully
+2026-03-25 12:14:36 INFO  BaseClass:234 - ========= Suite Execution Completed =========
+2026-03-25 12:16:37 ERROR BaseClass:183 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:84) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:149) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 12:16:42 INFO  BaseClass:195 - Closing WebDriver...
+2026-03-25 12:16:42 INFO  BaseClass:200 - Extent Report flushed successfully
+2026-03-25 12:16:42 INFO  BaseClass:234 - ========= Suite Execution Completed =========
+2026-03-25 12:17:13 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 12:17:13 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 12:17:13 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 12:17:15 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 12:17:15 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 12:17:16 INFO  BaseClass:131 - Entering email: yash.c@dreamcast.co
+2026-03-25 12:17:17 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 12:17:17 INFO  BaseClass:141 - OTP requested at: 2026-03-25 12:17
+2026-03-25 12:17:17 INFO  BaseClass:148 - OTP input detected. Fetching OTP...
+2026-03-25 12:17:17 INFO  EmailOTPReader:39 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 12:17:19 INFO  EmailOTPReader:53 - Connected to IMAP store successfully
+2026-03-25 12:17:20 INFO  EmailOTPReader:57 - Inbox opened. Total messages: 2488
+2026-03-25 12:18:23 ERROR BaseClass:185 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:106) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:151) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 12:18:28 INFO  BaseClass:197 - Closing WebDriver...
+2026-03-25 12:18:28 INFO  BaseClass:202 - Extent Report flushed successfully
+2026-03-25 12:18:28 INFO  BaseClass:236 - ========= Suite Execution Completed =========
+2026-03-25 12:21:37 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 12:21:37 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 12:21:37 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 12:21:40 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 12:21:40 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 12:21:41 INFO  BaseClass:131 - Entering email: yash.c@dreamcast.co
+2026-03-25 12:21:41 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 12:21:41 INFO  BaseClass:141 - OTP requested at: 2026-03-25 12:21
+2026-03-25 12:21:41 INFO  BaseClass:148 - OTP input detected. Fetching OTP...
+2026-03-25 12:21:41 INFO  EmailOTPReader:39 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 12:21:43 INFO  EmailOTPReader:53 - Connected to IMAP store successfully
+2026-03-25 12:21:43 INFO  EmailOTPReader:57 - Inbox opened. Total messages: 2490
+2026-03-25 12:21:54 ERROR BaseClass:183 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:84) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:149) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 12:21:59 INFO  BaseClass:195 - Closing WebDriver...
+2026-03-25 12:21:59 INFO  BaseClass:200 - Extent Report flushed successfully
+2026-03-25 12:21:59 INFO  BaseClass:234 - ========= Suite Execution Completed =========
+2026-03-25 12:22:48 ERROR BaseClass:185 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:107) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:151) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 12:22:53 INFO  BaseClass:197 - Closing WebDriver...
+2026-03-25 12:22:54 INFO  BaseClass:202 - Extent Report flushed successfully
+2026-03-25 12:22:54 INFO  BaseClass:236 - ========= Suite Execution Completed =========
+2026-03-25 12:35:39 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 12:35:40 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 12:35:40 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 12:35:42 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 12:35:42 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 12:35:43 INFO  BaseClass:131 - Entering email: yash.c@dreamcast.co
+2026-03-25 12:35:43 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 12:35:43 INFO  BaseClass:141 - OTP requested at: 2026-03-25 12:35
+2026-03-25 12:35:43 INFO  BaseClass:148 - OTP input detected. Fetching OTP...
+2026-03-25 12:35:43 INFO  EmailOTPReader:36 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 12:35:45 INFO  EmailOTPReader:45 - Connected to IMAP store successfully
+2026-03-25 12:35:46 INFO  EmailOTPReader:50 - Inbox opened. Total messages: 2491
+2026-03-25 12:36:47 ERROR EmailOTPReader:99 - OTP not found within timeout
+2026-03-25 12:36:47 ERROR BaseClass:185 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:100) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:151) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 12:36:52 INFO  BaseClass:197 - Closing WebDriver...
+2026-03-25 12:36:52 INFO  BaseClass:202 - Extent Report flushed successfully
+2026-03-25 12:36:52 INFO  BaseClass:236 - ========= Suite Execution Completed =========
+2026-03-25 12:41:42 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 12:41:42 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 12:41:42 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 12:41:45 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 12:41:45 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 12:41:45 INFO  BaseClass:131 - Entering email: yash.c@dreamcast.co
+2026-03-25 12:41:45 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 12:41:46 INFO  BaseClass:141 - OTP requested at: 2026-03-25 12:41
+2026-03-25 12:41:46 INFO  BaseClass:148 - OTP input detected. Fetching OTP...
+2026-03-25 12:41:46 INFO  EmailOTPReader:34 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 12:41:48 INFO  EmailOTPReader:43 - Connected to IMAP store successfully
+2026-03-25 12:41:48 INFO  EmailOTPReader:48 - Inbox opened. Total messages: 2492
+2026-03-25 12:42:52 ERROR EmailOTPReader:90 - OTP not found within timeout
+2026-03-25 12:42:52 ERROR BaseClass:185 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:91) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:151) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 12:42:58 INFO  BaseClass:197 - Closing WebDriver...
+2026-03-25 12:42:58 INFO  BaseClass:202 - Extent Report flushed successfully
+2026-03-25 12:42:58 INFO  BaseClass:236 - ========= Suite Execution Completed =========
+2026-03-25 12:50:08 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 12:50:08 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 12:50:08 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 12:50:11 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 12:50:11 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 12:50:11 INFO  BaseClass:131 - Entering email: yash.c@dreamcast.co
+2026-03-25 12:50:11 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 12:50:12 INFO  BaseClass:141 - OTP requested at: 2026-03-25 12:50
+2026-03-25 12:50:12 INFO  BaseClass:148 - OTP input detected. Fetching OTP...
+2026-03-25 12:50:12 INFO  EmailOTPReader:34 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 12:50:14 INFO  EmailOTPReader:43 - Connected to IMAP store successfully
+2026-03-25 12:50:14 INFO  EmailOTPReader:48 - Inbox opened. Total messages: 2493
+2026-03-25 12:51:17 ERROR EmailOTPReader:90 - OTP not found within timeout
+2026-03-25 12:51:17 ERROR BaseClass:185 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:91) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:151) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 12:51:22 INFO  BaseClass:197 - Closing WebDriver...
+2026-03-25 12:51:23 INFO  BaseClass:202 - Extent Report flushed successfully
+2026-03-25 12:51:23 INFO  BaseClass:236 - ========= Suite Execution Completed =========
+2026-03-25 12:57:42 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 12:57:42 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 12:57:42 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 12:57:44 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 12:57:44 INFO  BaseClass:120 - ===== Starting login process =====
+2026-03-25 12:57:44 INFO  BaseClass:131 - Entering email: yash.c@dreamcast.co
+2026-03-25 12:57:45 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 12:57:47 INFO  BaseClass:145 - OTP input detected. Fetching OTP...
+2026-03-25 12:57:47 INFO  EmailOTPReader:22 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 12:58:52 ERROR BaseClass:187 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:71) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:148) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 12:58:58 INFO  BaseClass:198 - Closing WebDriver...
+2026-03-25 12:58:58 INFO  BaseClass:203 - Extent Report flushed successfully
+2026-03-25 12:58:58 INFO  BaseClass:237 - ========= Suite Execution Completed =========
+2026-03-25 13:00:32 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 13:00:33 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 13:00:33 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 13:00:35 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 13:00:35 INFO  BaseClass:120 - ===== Starting login process =====
+2026-03-25 13:00:35 INFO  BaseClass:131 - Entering email: yash.c@dreamcast.co
+2026-03-25 13:00:36 INFO  BaseClass:134 - Clicking Continue button
+2026-03-25 13:00:38 INFO  BaseClass:145 - OTP input detected. Fetching OTP...
+2026-03-25 13:00:40 INFO  EmailOTPReader:30 - Connected to IMAP store successfully
+2026-03-25 13:00:40 INFO  EmailOTPReader:34 - Inbox opened. Total messages: 2495
+2026-03-25 13:01:43 ERROR BaseClass:187 - Error during login process
+java.lang.RuntimeException: OTP not found within timeout
+	at Tck.Utilities.EmailOTPReader.getOTP(EmailOTPReader.java:72) ~[test-classes/:?]
+	at Tck.Base.BaseClass.doLogin(BaseClass.java:148) ~[test-classes/:?]
+	at Tck.TestCases.LoginAccount.loginWithValid(LoginAccount.java:18) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-03-25 13:01:48 INFO  BaseClass:198 - Closing WebDriver...
+2026-03-25 13:01:49 INFO  BaseClass:203 - Extent Report flushed successfully
+2026-03-25 13:01:49 INFO  BaseClass:237 - ========= Suite Execution Completed =========
+2026-03-25 14:13:18 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 14:13:18 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 14:13:18 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 14:13:23 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 14:13:23 INFO  BaseClass:118 - Starting login process
+2026-03-25 14:13:24 INFO  BaseClass:127 - Entering email
+2026-03-25 14:13:25 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 14:13:25 INFO  BaseClass:133 - Entering password
+2026-03-25 14:22:55 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 14:22:55 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 14:22:55 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 14:22:57 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 14:22:57 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 14:22:58 INFO  BaseClass:133 - Entering email: yash.c@dreamcast.co
+2026-03-25 14:22:58 INFO  BaseClass:136 - Clicking Continue button
+2026-03-25 14:22:58 INFO  BaseClass:145 - OTP input detected. Fetching OTP...
+2026-03-25 14:23:43 INFO  BaseClass:192 - Closing WebDriver...
+2026-03-25 14:23:44 INFO  BaseClass:197 - Extent Report flushed successfully
+2026-03-25 14:23:44 INFO  BaseClass:231 - ========= Suite Execution Completed =========
+2026-03-25 14:26:28 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 14:26:28 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 14:26:28 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 14:26:30 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 14:26:30 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 14:26:31 INFO  BaseClass:133 - Entering email: yash.c@dreamcast.co
+2026-03-25 14:26:31 INFO  BaseClass:136 - Clicking Continue button
+2026-03-25 14:26:31 INFO  BaseClass:145 - OTP input detected. Fetching OTP...
+2026-03-25 14:27:16 INFO  BaseClass:192 - Closing WebDriver...
+2026-03-25 14:27:17 INFO  BaseClass:197 - Extent Report flushed successfully
+2026-03-25 14:27:17 INFO  BaseClass:231 - ========= Suite Execution Completed =========
+2026-03-25 14:47:12 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 14:47:13 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 14:47:13 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 14:47:15 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 14:47:15 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 14:47:16 INFO  BaseClass:133 - Entering email: yash.c@dreamcast.co
+2026-03-25 14:47:16 INFO  BaseClass:136 - Clicking Continue button
+2026-03-25 14:47:16 INFO  BaseClass:145 - OTP input detected. Fetching OTP...
+2026-03-25 14:48:01 INFO  BaseClass:192 - Closing WebDriver...
+2026-03-25 14:48:02 INFO  BaseClass:197 - Extent Report flushed successfully
+2026-03-25 14:48:02 INFO  BaseClass:231 - ========= Suite Execution Completed =========
+2026-03-25 14:58:01 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 14:58:01 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 14:58:01 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 14:58:03 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 14:58:03 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 14:58:04 INFO  BaseClass:133 - Entering email: yash.c@dreamcast.co
+2026-03-25 14:58:04 INFO  BaseClass:136 - Clicking Continue button
+2026-03-25 14:58:06 INFO  BaseClass:147 - OTP input detected. Fetching OTP from email...
+2026-03-25 14:58:06 INFO  EmailOTPReader:27 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 14:58:51 INFO  BaseClass:195 - Closing WebDriver...
+2026-03-25 14:58:52 INFO  BaseClass:200 - Extent Report flushed successfully
+2026-03-25 14:58:52 INFO  BaseClass:234 - ========= Suite Execution Completed =========
+2026-03-25 15:01:32 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 15:01:32 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 15:01:32 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 15:01:34 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 15:01:34 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 15:01:35 INFO  BaseClass:133 - Entering email: yash.c@dreamcast.co
+2026-03-25 15:01:35 INFO  BaseClass:136 - Clicking Continue button
+2026-03-25 15:01:35 INFO  BaseClass:158 - OTP input detected. Fetching OTP...
+2026-03-25 15:01:35 INFO  EmailOTPReader:27 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 15:02:20 INFO  BaseClass:206 - Closing WebDriver...
+2026-03-25 15:02:21 INFO  BaseClass:211 - Extent Report flushed successfully
+2026-03-25 15:02:21 INFO  BaseClass:245 - ========= Suite Execution Completed =========
+2026-03-25 15:07:03 INFO  BaseClass:46 - ========= Suite Execution Started =========
+2026-03-25 15:07:04 INFO  BaseClass:50 - Extent Report initialized
+2026-03-25 15:07:04 INFO  BaseClass:63 - Properties files loaded successfully
+2026-03-25 15:07:06 INFO  BaseClass:72 - WebDriver initialized successfully
+2026-03-25 15:07:06 INFO  BaseClass:121 - ===== Starting login process =====
+2026-03-25 15:07:06 INFO  BaseClass:133 - Entering email: yash.c@dreamcast.co
+2026-03-25 15:07:07 INFO  BaseClass:136 - Clicking Continue button
+2026-03-25 15:07:07 INFO  BaseClass:158 - OTP input detected. Fetching OTP...
+2026-03-25 15:07:07 INFO  EmailOTPReader:27 - Connecting to email inbox: yash.c@dreamcast.co
+2026-03-25 15:07:52 INFO  BaseClass:206 - Closing WebDriver...
+2026-03-25 15:07:52 INFO  BaseClass:211 - Extent Report flushed successfully
+2026-03-25 15:07:52 INFO  BaseClass:245 - ========= Suite Execution Completed =========
+2026-03-25 16:28:45 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 16:28:46 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 16:28:46 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 16:28:49 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 16:36:28 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 16:36:28 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 16:36:28 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 16:36:30 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 16:37:24 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 16:37:24 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 16:37:24 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 16:37:26 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 16:39:24 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 16:39:25 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 16:39:25 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 16:39:27 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 16:39:32 INFO  BaseClass:118 - Starting login process
+2026-03-25 16:39:32 INFO  BaseClass:127 - Entering email
+2026-03-25 16:39:32 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 16:39:32 INFO  BaseClass:133 - Entering password
+2026-03-25 16:39:32 INFO  BaseClass:136 - Submitting login
+2026-03-25 16:39:32 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 16:39:33 INFO  BaseClass:142 - Login process completed
+2026-03-25 16:39:47 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 16:39:49 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 16:39:49 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-25 16:58:39 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 16:58:40 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 16:58:40 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 16:58:42 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 16:58:43 INFO  BaseClass:37 - Blank email validation checked
+2026-03-25 16:58:45 INFO  BaseClass:54 - Invalid email validation checked
+2026-03-25 16:58:45 INFO  BaseClass:67 - Entered email and clicked continue
+2026-03-25 16:58:46 INFO  BaseClass:71 - Entered invalid password and submitted login
+2026-03-25 16:58:47 INFO  BaseClass:77 - Invalid password validation checked
+2026-03-25 16:58:47 INFO  BaseClass:118 - Starting login process
+2026-03-25 16:58:47 INFO  BaseClass:127 - Entering email
+2026-03-25 16:58:47 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 16:58:47 INFO  BaseClass:133 - Entering password
+2026-03-25 16:58:47 INFO  BaseClass:136 - Submitting login
+2026-03-25 16:58:47 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 16:58:48 INFO  BaseClass:142 - Login process completed
+2026-03-25 16:58:50 INFO  BaseClass:24 - Opened profile option at index: 0
+2026-03-25 16:58:50 INFO  BaseClass:55 - Attempted to save profile with empty first name
+2026-03-25 16:59:04 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 16:59:06 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 16:59:06 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-25 17:02:15 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 17:02:15 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 17:02:15 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 17:02:18 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 17:02:19 INFO  BaseClass:37 - Blank email validation checked
+2026-03-25 17:02:21 INFO  BaseClass:54 - Invalid email validation checked
+2026-03-25 17:02:21 INFO  BaseClass:67 - Entered email and clicked continue
+2026-03-25 17:02:21 INFO  BaseClass:71 - Entered invalid password and submitted login
+2026-03-25 17:02:23 INFO  BaseClass:77 - Invalid password validation checked
+2026-03-25 17:02:23 INFO  BaseClass:118 - Starting login process
+2026-03-25 17:02:23 INFO  BaseClass:127 - Entering email
+2026-03-25 17:02:23 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 17:02:23 INFO  BaseClass:133 - Entering password
+2026-03-25 17:02:24 INFO  BaseClass:136 - Submitting login
+2026-03-25 17:02:24 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 17:02:25 INFO  BaseClass:142 - Login process completed
+2026-03-25 17:02:26 INFO  BaseClass:24 - Opened profile option at index: 0
+2026-03-25 17:02:26 INFO  BaseClass:55 - Attempted to save profile with empty first name
+2026-03-25 17:02:40 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 17:02:42 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 17:02:42 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-25 17:05:26 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 17:05:26 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 17:05:26 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 17:05:28 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 17:05:30 INFO  BaseClass:37 - Blank email validation checked
+2026-03-25 17:05:31 INFO  BaseClass:54 - Invalid email validation checked
+2026-03-25 17:05:31 INFO  BaseClass:67 - Entered email and clicked continue
+2026-03-25 17:05:32 INFO  BaseClass:71 - Entered invalid password and submitted login
+2026-03-25 17:05:33 INFO  BaseClass:77 - Invalid password validation checked
+2026-03-25 17:05:33 INFO  BaseClass:118 - Starting login process
+2026-03-25 17:05:33 INFO  BaseClass:127 - Entering email
+2026-03-25 17:05:33 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 17:05:33 INFO  BaseClass:133 - Entering password
+2026-03-25 17:05:34 INFO  BaseClass:136 - Submitting login
+2026-03-25 17:05:34 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 17:05:35 INFO  BaseClass:142 - Login process completed
+2026-03-25 17:05:36 INFO  BaseClass:25 - Opened profile option at index: 0
+2026-03-25 17:05:36 INFO  BaseClass:56 - Attempted to save profile with empty first name
+2026-03-25 17:05:50 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 17:05:52 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 17:05:52 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-25 17:06:02 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 17:06:02 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 17:06:02 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 17:06:04 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 17:06:06 INFO  BaseClass:37 - Blank email validation checked
+2026-03-25 17:06:07 INFO  BaseClass:54 - Invalid email validation checked
+2026-03-25 17:06:08 INFO  BaseClass:67 - Entered email and clicked continue
+2026-03-25 17:06:08 INFO  BaseClass:71 - Entered invalid password and submitted login
+2026-03-25 17:06:09 INFO  BaseClass:77 - Invalid password validation checked
+2026-03-25 17:06:09 INFO  BaseClass:118 - Starting login process
+2026-03-25 17:06:09 INFO  BaseClass:127 - Entering email
+2026-03-25 17:06:10 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 17:06:10 INFO  BaseClass:133 - Entering password
+2026-03-25 17:06:10 INFO  BaseClass:136 - Submitting login
+2026-03-25 17:06:10 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 17:06:12 INFO  BaseClass:142 - Login process completed
+2026-03-25 17:06:13 INFO  BaseClass:25 - Opened profile option at index: 0
+2026-03-25 17:06:13 INFO  BaseClass:56 - Attempted to save profile with empty first name
+2026-03-25 17:06:58 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 17:06:58 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 17:06:58 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-25 17:08:57 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 17:08:57 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 17:08:57 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 17:08:59 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 17:09:01 INFO  BaseClass:37 - Blank email validation checked
+2026-03-25 17:09:03 INFO  BaseClass:54 - Invalid email validation checked
+2026-03-25 17:09:03 INFO  BaseClass:67 - Entered email and clicked continue
+2026-03-25 17:09:04 INFO  BaseClass:71 - Entered invalid password and submitted login
+2026-03-25 17:09:05 INFO  BaseClass:77 - Invalid password validation checked
+2026-03-25 17:09:05 INFO  BaseClass:118 - Starting login process
+2026-03-25 17:09:05 INFO  BaseClass:127 - Entering email
+2026-03-25 17:09:05 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 17:09:05 INFO  BaseClass:133 - Entering password
+2026-03-25 17:09:06 INFO  BaseClass:136 - Submitting login
+2026-03-25 17:09:06 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 17:09:07 INFO  BaseClass:142 - Login process completed
+2026-03-25 17:09:08 INFO  BaseClass:25 - Opened profile option at index: 0
+2026-03-25 17:09:27 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 17:09:30 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 17:09:30 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-25 17:11:32 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 17:11:32 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 17:11:32 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 17:11:34 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 17:11:36 INFO  BaseClass:37 - Blank email validation checked
+2026-03-25 17:11:37 INFO  BaseClass:54 - Invalid email validation checked
+2026-03-25 17:11:38 INFO  BaseClass:67 - Entered email and clicked continue
+2026-03-25 17:11:38 INFO  BaseClass:71 - Entered invalid password and submitted login
+2026-03-25 17:11:39 INFO  BaseClass:77 - Invalid password validation checked
+2026-03-25 17:11:39 INFO  BaseClass:118 - Starting login process
+2026-03-25 17:11:39 INFO  BaseClass:127 - Entering email
+2026-03-25 17:11:39 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 17:11:40 INFO  BaseClass:133 - Entering password
+2026-03-25 17:11:40 INFO  BaseClass:136 - Submitting login
+2026-03-25 17:11:40 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 17:11:41 INFO  BaseClass:142 - Login process completed
+2026-03-25 17:11:43 INFO  BaseClass:25 - Opened profile option at index: 0
+2026-03-25 17:11:46 INFO  BaseClass:62 - Empty first name validation checked
+2026-03-25 17:11:46 INFO  BaseClass:72 - Empty email validation checked
+2026-03-25 17:11:59 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 17:12:02 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 17:12:02 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-25 17:20:49 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 17:20:49 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 17:20:49 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 17:20:52 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 17:20:54 INFO  BaseClass:37 - Blank email validation checked
+2026-03-25 17:20:55 INFO  BaseClass:54 - Invalid email validation checked
+2026-03-25 17:20:55 INFO  BaseClass:67 - Entered email and clicked continue
+2026-03-25 17:20:56 INFO  BaseClass:71 - Entered invalid password and submitted login
+2026-03-25 17:20:57 INFO  BaseClass:77 - Invalid password validation checked
+2026-03-25 17:20:57 INFO  BaseClass:118 - Starting login process
+2026-03-25 17:20:57 INFO  BaseClass:127 - Entering email
+2026-03-25 17:20:57 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 17:20:57 INFO  BaseClass:133 - Entering password
+2026-03-25 17:20:58 INFO  BaseClass:136 - Submitting login
+2026-03-25 17:20:58 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 17:20:59 INFO  BaseClass:142 - Login process completed
+2026-03-25 17:21:01 INFO  BaseClass:25 - Opened profile option at index: 0
+2026-03-25 17:21:04 INFO  BaseClass:62 - Empty first name validation checked
+2026-03-25 17:21:04 INFO  BaseClass:72 - Empty email validation checked
+2026-03-25 17:21:17 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 17:21:19 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 17:21:19 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-25 17:23:31 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 17:23:32 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 17:23:32 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 17:23:34 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 17:23:35 INFO  BaseClass:37 - Blank email validation checked
+2026-03-25 17:23:37 INFO  BaseClass:54 - Invalid email validation checked
+2026-03-25 17:23:37 INFO  BaseClass:67 - Entered email and clicked continue
+2026-03-25 17:23:37 INFO  BaseClass:71 - Entered invalid password and submitted login
+2026-03-25 17:23:38 INFO  BaseClass:77 - Invalid password validation checked
+2026-03-25 17:23:38 INFO  BaseClass:118 - Starting login process
+2026-03-25 17:23:39 INFO  BaseClass:127 - Entering email
+2026-03-25 17:23:39 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 17:23:39 INFO  BaseClass:133 - Entering password
+2026-03-25 17:23:39 INFO  BaseClass:136 - Submitting login
+2026-03-25 17:23:39 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 17:23:40 INFO  BaseClass:142 - Login process completed
+2026-03-25 17:23:42 INFO  BaseClass:25 - Opened profile option at index: 0
+2026-03-25 17:23:45 INFO  BaseClass:62 - Empty first name validation checked
+2026-03-25 17:23:45 INFO  BaseClass:72 - Empty email validation checked
+2026-03-25 17:23:51 INFO  BaseClass:71 - Left event name blank
+2026-03-25 17:23:51 INFO  BaseClass:75 - Clicked create event button with blank name
+2026-03-25 17:23:56 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 17:23:59 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 17:23:59 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-25 17:27:56 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-25 17:27:56 INFO  BaseClass:47 - Extent Report initialized
+2026-03-25 17:27:56 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-25 17:27:59 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-25 17:28:00 INFO  BaseClass:37 - Blank email validation checked
+2026-03-25 17:28:02 INFO  BaseClass:54 - Invalid email validation checked
+2026-03-25 17:28:02 INFO  BaseClass:67 - Entered email and clicked continue
+2026-03-25 17:28:03 INFO  BaseClass:71 - Entered invalid password and submitted login
+2026-03-25 17:28:04 INFO  BaseClass:77 - Invalid password validation checked
+2026-03-25 17:28:04 INFO  BaseClass:118 - Starting login process
+2026-03-25 17:28:04 INFO  BaseClass:127 - Entering email
+2026-03-25 17:28:04 INFO  BaseClass:130 - Clicking Continue button
+2026-03-25 17:28:04 INFO  BaseClass:133 - Entering password
+2026-03-25 17:28:05 INFO  BaseClass:136 - Submitting login
+2026-03-25 17:28:05 INFO  BaseClass:139 - Handling skip phone
+2026-03-25 17:28:06 INFO  BaseClass:142 - Login process completed
+2026-03-25 17:28:07 INFO  BaseClass:25 - Opened profile option at index: 0
+2026-03-25 17:28:08 INFO  BaseClass:62 - Empty first name validation checked
+2026-03-25 17:28:08 INFO  BaseClass:72 - Empty email validation checked
+2026-03-25 17:28:13 INFO  BaseClass:77 - Verified event creation fails without name
+2026-03-25 17:28:18 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-25 17:28:21 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-25 17:28:21 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-26 09:46:59 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-26 09:46:59 INFO  BaseClass:47 - Extent Report initialized
+2026-03-26 09:46:59 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-26 09:47:02 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-26 09:47:02 INFO  BaseClass:118 - Starting login process
+2026-03-26 09:47:03 INFO  BaseClass:127 - Entering email
+2026-03-26 09:47:03 INFO  BaseClass:130 - Clicking Continue button
+2026-03-26 09:47:03 INFO  BaseClass:133 - Entering password
+2026-03-26 09:47:04 INFO  BaseClass:136 - Submitting login
+2026-03-26 09:47:04 INFO  BaseClass:139 - Handling skip phone
+2026-03-26 09:47:06 INFO  BaseClass:142 - Login process completed
+2026-03-26 09:47:06 INFO  BaseClass:19 - Login with valid credentials test executed
+2026-03-26 09:47:07 INFO  BaseClass:22 - Opened profile option at index: 0
+2026-03-26 09:47:09 INFO  BaseClass:36 - Profile update verified successfully
+2026-03-26 09:47:56 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-26 09:47:57 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-26 09:47:57 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-03-27 17:52:58 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-27 17:52:59 INFO  BaseClass:47 - Extent Report initialized
+2026-03-27 17:52:59 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-27 17:53:03 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-27 17:53:03 INFO  BaseClass:118 - Starting login process
+2026-03-27 17:53:03 INFO  BaseClass:127 - Entering email
+2026-03-27 17:53:04 INFO  BaseClass:130 - Clicking Continue button
+2026-03-27 17:53:04 INFO  BaseClass:133 - Entering password
+2026-03-27 17:53:04 INFO  BaseClass:136 - Submitting login
+2026-03-27 17:53:04 INFO  BaseClass:139 - Handling skip phone
+2026-03-27 17:53:05 INFO  BaseClass:142 - Login process completed
+2026-03-27 17:53:05 INFO  BaseClass:19 - Login with valid credentials test executed
+2026-03-27 17:53:06 INFO  BaseClass:22 - Opened profile option at index: 0
+2026-03-27 17:53:08 INFO  BaseClass:36 - Profile update verified successfully
+2026-03-27 17:54:23 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-03-27 17:54:24 INFO  BaseClass:47 - Extent Report initialized
+2026-03-27 17:54:24 INFO  BaseClass:60 - Properties files loaded successfully
+2026-03-27 17:54:26 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-03-27 17:54:26 INFO  BaseClass:118 - Starting login process
+2026-03-27 17:54:26 INFO  BaseClass:127 - Entering email
+2026-03-27 17:54:27 INFO  BaseClass:130 - Clicking Continue button
+2026-03-27 17:54:27 INFO  BaseClass:133 - Entering password
+2026-03-27 17:54:27 INFO  BaseClass:136 - Submitting login
+2026-03-27 17:54:27 INFO  BaseClass:139 - Handling skip phone
+2026-03-27 17:54:28 INFO  BaseClass:142 - Login process completed
+2026-03-27 17:54:28 INFO  BaseClass:19 - Login with valid credentials test executed
+2026-03-27 17:54:30 INFO  BaseClass:22 - Opened profile option at index: 0
+2026-03-27 17:54:31 INFO  BaseClass:36 - Profile update verified successfully
+2026-03-27 17:55:19 INFO  BaseClass:153 - Closing WebDriver...
+2026-03-27 17:55:19 INFO  BaseClass:158 - Extent Report flushed successfully
+2026-03-27 17:55:19 INFO  BaseClass:192 - ========= Suite Execution Completed =========
+2026-05-13 18:21:22 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-05-13 18:21:22 INFO  BaseClass:47 - Extent Report initialized
+2026-05-13 18:21:22 INFO  BaseClass:60 - Properties files loaded successfully
+2026-05-13 18:21:32 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-05-13 18:21:32 INFO  BaseClass:118 - Starting login process
+2026-05-13 18:21:33 INFO  BaseClass:127 - Entering email
+2026-05-13 18:21:33 INFO  BaseClass:130 - Clicking Continue button
+2026-05-13 18:21:33 INFO  BaseClass:133 - Entering password
+2026-05-13 18:21:34 INFO  BaseClass:136 - Submitting login
+2026-05-13 18:21:34 INFO  BaseClass:139 - Handling skip phone
+2026-07-29 11:05:45 INFO  BaseClass:43 - ========= Suite Execution Started =========
+2026-07-29 11:05:46 INFO  BaseClass:47 - Extent Report initialized
+2026-07-29 11:05:46 INFO  BaseClass:60 - Properties files loaded successfully
+2026-07-29 11:05:53 INFO  BaseClass:69 - WebDriver initialized successfully
+2026-07-29 11:05:53 INFO  BaseClass:118 - Starting login process
+2026-07-29 11:05:54 INFO  BaseClass:127 - Entering email
+2026-07-29 11:05:54 INFO  BaseClass:130 - Clicking Continue button
+2026-07-29 11:05:54 INFO  BaseClass:133 - Entering password
+2026-07-29 11:05:55 INFO  BaseClass:136 - Submitting login
+2026-07-29 11:05:55 INFO  BaseClass:139 - Handling skip phone
+2026-07-29 11:06:27 INFO  BaseClass:22 - Opened profile option at index: 0
+2026-07-29 11:06:29 INFO  BaseClass:36 - Profile update verified successfully

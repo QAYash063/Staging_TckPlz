@@ -16,8 +16,9 @@ public class LoginAccount extends BaseClass {
     @Test(groups = { "positive", "smoke", "regression" })
     public void loginWithValid() {
         doLogin();  // manually call login
+        log.info("Login with valid credentials test executed");
 
-        CustomListeners.test.get().pass("Logged in successfully with valid credentials");
+        //CustomListeners.test.get().pass("Logged in successfully with valid credentials");
     }
 
     /**
@@ -33,8 +34,8 @@ public class LoginAccount extends BaseClass {
 
         String actualText = waitForVisibility(By.xpath(OR.getProperty("BlankEmailValidation"))).getText();
         AssertUtil.hardEquals(actualText, "Email can't be blank.", "Blank email validation message mismatch");
-        
-        CustomListeners.test.get().info("Blank email validation checked");
+        log.info("Blank email validation checked");
+        //CustomListeners.test.get().info("Blank email validation checked");
     }
 
     /**
@@ -49,7 +50,8 @@ public class LoginAccount extends BaseClass {
 
         String actualText = waitForVisibility(By.xpath(OR.getProperty("InvalidEmailValidation1"))).getText();
         AssertUtil.hardEquals(actualText, "Please sign up with a different email address.", "Invalid email validation message mismatch");
-        CustomListeners.test.get().info("Invalid email validation checked");
+        //CustomListeners.test.get().info("Invalid email validation checked");
+        log.info("Invalid email validation checked");
     }
 
     /**
@@ -60,15 +62,18 @@ public class LoginAccount extends BaseClass {
         SeleniumDriver.getDriver().get(Config.getProperty("testSiteUrl"));
 
         waitForPresence(By.xpath(OR.getProperty("EnterEmail"))).clear();
-        waitForPresence(By.xpath(OR.getProperty("EnterEmail"))).sendKeys("yash.c+21@dreamcast.co");
+        waitForPresence(By.xpath(OR.getProperty("EnterEmail"))).sendKeys(Config.getProperty("Email"));
         waitForClick(By.xpath(OR.getProperty("ContinueWithEmailBtn"))).click();
+        log.info("Entered email and clicked continue");
 
         waitForPresence(By.xpath(OR.getProperty("EnterPassword"))).sendKeys("System@123454");
         waitForClick(By.xpath(OR.getProperty("SubmitLogin"))).click();
+        log.info("Entered invalid password and submitted login");
 
         String actualText = waitForVisibility(By.xpath(OR.getProperty("InvalidPasswordVlaidation"))).getText();
         AssertUtil.hardEquals(actualText, "Incorrect password.", "Invalid password validation message mismatch");
 
         CustomListeners.test.get().info("Invalid password validation checked");
+        log.info("Invalid password validation checked");
     }
 }
